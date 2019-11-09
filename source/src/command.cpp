@@ -1612,7 +1612,7 @@ void writecfg()
     loopv(sids)
     {
         ident &id = *sids[i];
-        if(strncmp(id.name, "demodesc_", 9))
+        if(strncmp(id.name, "__demodesc_", 11))
         {
             const char *action = id.action;
             for(identstack *s = id.stack; s; s = s->next) action = s->action;

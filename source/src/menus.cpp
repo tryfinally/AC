@@ -1373,6 +1373,7 @@ void gmenu::init()
             else if(!strcmp(dirlist->ext, "dmo"))
             {
                 if(!dirlist->searchfile || filefound) items.add(new mitemtext(this, f, newstring(dirlist->action), NULL, NULL, d));
+                else DELSTRING(d);
             }
             else items.add(new mitemtext(this, f, newstring(dirlist->action), NULL, NULL, d));
         }

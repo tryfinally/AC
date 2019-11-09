@@ -1108,7 +1108,7 @@ char *getfiledesc(const char *dir, const char *name, const char *ext) // extract
         }
         formatstring(text)("%s%s", tag, hdr.desc);
         text[DHDR_DESCCHARS - 1] = '\0';
-        formatstring(demodescalias)("demodesc_%s", name);
+        formatstring(demodescalias)("__demodesc_%s", name);
         const char *customdesc = getalias(demodescalias);
         if(customdesc)
         {
