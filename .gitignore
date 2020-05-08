@@ -2,6 +2,7 @@
 *.d
 *.o
 *.lo
+*.log
 shadows.dat
 bin_unix/native_client
 bin_unix/native_server
@@ -30,6 +31,7 @@ source/enet/config.status
 source/enet/libenet.la
 source/enet/libenet.pc
 source/enet/libtool
+source/enet/autom4te.cache/
 source/src/ac_client
 source/src/ac_server
 source/src/cube.h.gch
@@ -38,4 +40,3 @@ clientlog*.txt
 dumpmapconfig.txt
 packetlog.txt
 profile/*
-
